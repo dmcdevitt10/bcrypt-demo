@@ -12,7 +12,8 @@ module.exports = {
                 chats[i].messages.push(message)
                 let messageToReturn = {...chats[i]}
                 delete messageToReturn.pinHash
-                res.status(200).send(messageToReturn)
+                return res.status(200).send(messageToReturn)
+                
             }
         }
 
